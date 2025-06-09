@@ -5,18 +5,19 @@ let body = document.querySelector("body");
 
 btn.addEventListener("click" , () => {
     let item = document.createElement("li");
-    item.innerText= input.value;
+    item.innerText= input.value.toUpperCase();
 
     let del = document.createElement("button");
     del.innerText = "delete";
     del.classList.add("delete");
 
-    let com = document.createElement("completed");
+    let com = document.createElement("button");
     com.innerText = "completed";
     com.classList.add = "completed";
 
-    item.appendChild(com);
+    
     item.appendChild(del);
+    item.appendChild(com);
     ul.appendChild(item);
     input.value = "";
 });
@@ -37,12 +38,10 @@ ul.addEventListener("click" , function(event){
     }
 });
 
-
-
-// let delBtns = document.querySelectorAll(".delete");
-// for(del of delBtns){
-//     del.addEventListener("click" , function() {
-//     let par = this.parentElement;
-//     par.remove();
-// });
-// }
+let delBtns = document.querySelectorAll(".delete");
+for(del of delBtns){
+    del.addEventListener("click" , function() {
+    let par = this.parentElement;
+    par.remove();
+});
+}
