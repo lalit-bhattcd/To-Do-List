@@ -1,19 +1,18 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body{
+html ,body{
     background: linear-gradient(45deg , rgb(219, 6, 219) , rgb(40, 244, 244) , rgb(255, 0, 212));
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 .data{
-    border: 2px solid black;
-    padding-top: 210px;
-    padding-bottom: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 90vh;
+    margin: 0;
 }
 button{
     font-size: 14px;
